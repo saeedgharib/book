@@ -20,7 +20,7 @@ app.use(cors());
 //     allowedHeaders: ['Content-Type'],
 //   })
 // );
-
+export default async (req, res) => {
 app.get('/', (request, response) => {
   console.log(request);
   return response.status(234).send('Welcome To MERN Stack Tutorial');
@@ -39,5 +39,5 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
+}
 
-export default app;
